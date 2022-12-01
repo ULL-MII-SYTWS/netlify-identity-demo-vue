@@ -30,18 +30,19 @@
           // Set the OAuth provider and token scope
           // Provider can be "github", "gitlab", or "bitbucket"
           // The scopes available depend on your OAuth provider
-          { provider: "github", scope: "user" },
+          { 
+            provider: "github", 
+            scope: "user" 
+          },
           async function (error, data) {
             if (error) {
               outputToken.innerText =
                 "Error Authenticating with GitHub: " + error;
             } else {
               outputToken.innerText =
-                "Authenticated with GitHub. Access Token: " +
-                data.token;
-              outputEmail.innerText = await loadGitHubUserEmails(
-                data.token
-              );
+                "Authenticated with GitHub. Access Token: " + data.token;
+              outputEmail.innerText = 
+                await loadGitHubUserEmails(data.token);
             }
           }
         );

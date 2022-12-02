@@ -68,8 +68,8 @@
 
       let user = await getGH("https://api.github.com/user", token);
       let emails = await getGH("https://api.github.com/user/emails", token);
-      let result = { login: user.login, emails: JSON.stringify(emails) };
-      return JSON.stringify(result);
+      let result = { login: user.login, emails: JSON.stringify(emails, 2) };
+      return JSON.stringify(result, 2);
     }
   </script>
 </body>

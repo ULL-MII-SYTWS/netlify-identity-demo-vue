@@ -1,1 +1,2 @@
-See <https://ull-mii-sytws.github.io/temas/web/netlify-github-oauth.html>
+* See <https://ull-mii-sytws.github.io/temas/web/netlify-github-oauth.html>
+* Code of [netlify-auth-providers@1.0.0-alpha5/lib/netlify.js](https://unpkg.com/netlify-auth-providers@1.0.0-alpha5/lib/netlify.js)

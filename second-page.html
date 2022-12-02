@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>Second page</h2>
+  <p><a href="#" id="login">Authenticate</a></p>
+
+  <p>Token: <pre id="output-token"></pre></p>
+
+  <p>
+    User login and emails: <br/>
+    <pre id="output-email"></pre>
+  </p>
+
+  <script>
+   let myName = localStorage.getItem("login");
+   let emails = localStorage.getItem("emails");
+
+   document.getElementById("login").innerText = myName;
+   document.getElementById("output-email").innerText = emails;
+
+   console.log(myName);
+   console.log(emails);
+  </script>
+</body>
+</html>

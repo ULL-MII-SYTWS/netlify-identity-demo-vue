@@ -46,7 +46,7 @@
               "Error Authenticating with GitHub: " + error;
           } else {
             outputToken.innerText =
-              "Authenticated with GitHub. Access Token: " + data.token;
+              "Authenticated with GitHub. Access Token: " + data.token.substring(0, Math.min(10, data.token.length)) + "...";
             outputEmail.innerText =
               await loadGitHubUserEmails(data.token);
           }

@@ -7,22 +7,21 @@
         alt="Fork me on GitHub"
       >
     </a>
-    <img alt="Vue logo" src="./assets/logo.png">
-    <h3>Welcome to Netlify Identity Demo in Vue.js</h3>
+    <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
+    <!-- <h3>Welcome to Netlify Identity Demo in Vue.js</h3> -->
     <div v-if="isLoggedIn">
       <p>Hello {{ username }}</p>
       <p>
         <button @click="triggerNetlifyIdentityAction('logout')">Log Out</button>
       </p>
     </div>
-    <div v-else>
-      <p>You are not logged in.</p>
-      <p>
-        <button @click="triggerNetlifyIdentityAction('login')">Log In</button>
+    <ul v-else>
+      <li><!-- You are not logged in: -->
+        <button @click="triggerNetlifyIdentityAction('login')">Log In</button> 
+      </li>
+      <li>
         <button @click="triggerNetlifyIdentityAction('signup')">Sign Up</button>
-      </p>
-    </div>
-    <ul>
+      </li>
       <li>
         <router-link :to="{name:'Home'}">Home Page</router-link>
       </li>
@@ -30,7 +29,13 @@
         <router-link :to="{name:'Public'}">Public Page</router-link>
       </li>
       <li>
+        <router-link :to="{name:'SecondPublic'}">Second Public Page</router-link>
+      </li>
+      <li>
         <router-link :to="{name:'Protected'}">Protected Page</router-link>
+      </li>
+      <li>
+        <a href="/chazam">Not Found Page</a>
       </li>
     </ul>
     <router-view></router-view>
@@ -40,6 +45,7 @@
 <script>
 import Home from "@/components/Home";
 import Public from "@/components/Public";
+import Public2 from "@/components/Public2";
 import Protected from "@/components/Protected";
 
 import netlifyIdentity from "netlify-identity-widget";
@@ -56,6 +62,7 @@ export default {
   components: {
     Home,
     Public,
+    Public2,
     Protected
   },
   computed: {

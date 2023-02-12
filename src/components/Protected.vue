@@ -12,7 +12,7 @@
           return next();
         } else {
           swal({
-            title: "Error!",
+            title: "Error made with sweetalert!2",
             text: "Please log in or sign up!",
             type: "error",
             allowOutsideClick: false,

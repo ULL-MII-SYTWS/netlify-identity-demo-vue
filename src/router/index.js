@@ -5,6 +5,7 @@ Vue.use(Router);
 
 import Home from '@/components/Home';
 import Public from '@/components/Public'
+import Public2 from '@/components/Public2'
 import Protected from '@/components/Protected'
 
 // import { mapGetters } from 'vuex';
@@ -29,6 +30,12 @@ const router = new Router({
             name: 'Public',
             component: Public
         },
+        {
+            path: '/public2',
+            name: 'SecondPublic',
+            component: Public2
+        },
+
         {
             path: '/protected',
             name: 'Protected',

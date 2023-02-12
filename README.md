@@ -5,7 +5,12 @@
 The repo [whizjs/netlify-identity-demo-vue](https://github.com/whizjs/netlify-identity-demo-vue) has a demo of how to use Netlify Identity with Vue using the [Netlify Identity widget](https://github.com/netlify/netlify-identity-widget)
 that is deployed at <https://netlify-identity-demo-vue.netlify.app/>. 
 
-The demo currently (2023) fails when signup.
+The demo currently (2023) fails when signup with a CORS error:
+
+```
+Access to fetch at 'https://netlify-identity-demo-vue.netlify.com/.netlify/identity/settings' from origin 'https://netlify-identity-demo-vue.netlify.app' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: Redirect is not allowed for a preflight request.
+netlify-identity-demo-vue.netlify.com/.netlify/identity/settings:1          Failed to load resource: net::ERR_FAILED
+```
 
 This is a fork of the repo.
 

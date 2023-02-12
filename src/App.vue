@@ -34,9 +34,8 @@
       <li>
         <router-link :to="{name:'Protected'}">Protected Page</router-link>
       </li>
-      <li>
-        <a href="/chazam">Not Found Page</a>
-      </li>
+      <li><a href="https://netlify-identity-demo-vue.netlify.com/" target="_blank">Original Demo Page</a></li>
+      <li><a href="/tutu">Not Found Page</a></li>
     </ul>
     <router-view></router-view>
   </div>

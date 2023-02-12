@@ -16,7 +16,7 @@ This is a fork of the repo.
  - Netlify Identiy Widget
  - Netlify (hosting) 
 
-### Project setup
+## Installation
 
 ```
 node --version
@@ -48,9 +48,7 @@ Lints and fixes files
 yarn lint
 ```
 
-## Installation
 
+## References
 
-## Blog
-
-<https://www.netlify.com/blog/2017/09/07/introducing-built-in-identity-service-to-streamline-user-management/>
+* <https://www.netlify.com/blog/2017/09/07/introducing-built-in-identity-service-to-streamline-user-management/>

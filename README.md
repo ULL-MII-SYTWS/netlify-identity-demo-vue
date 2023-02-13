@@ -53,6 +53,11 @@ Lints and fixes files
 yarn lint
 ```
 
+## CORS
+
+See [How to enable CORS on a Netlify deployment?](https://stackoverflow.com/questions/62507022/how-to-enable-cors-on-a-netlify-deployment)
+
+
 
 ## References
 

@@ -42,6 +42,7 @@
 </template>
 
 <script>
+/* eslint-disable */ 
 import Home from "@/components/Home";
 import Public from "@/components/Public";
 import Public2 from "@/components/Public2";
